@@ -208,9 +208,9 @@ class LinkMixin(models.Model):
         if len(provided_link_fields) > 1:
             # Too many fields have a value.
             verbose_names = sorted(link_field_verbose_names.values())
-            error_msg = _('Only one of %s or %s may be given.') % (
-                ', '.join(verbose_names[:-1]),
-                verbose_names[-1],
+            error_msg = _('Only one of {internal} or {external} may be given.').format(
+                internal=', '.join(verbose_names[:-1]),
+                external=verbose_names[-1],
             )
             errors = {}.fromkeys(provided_link_fields.keys(), error_msg)
             raise ValidationError(errors)
