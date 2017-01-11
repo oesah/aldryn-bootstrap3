@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-10 17:55+0100\n"
+"POT-Creation-Date: 2017-01-11 16:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 msgid "Responsive utilities"
 msgstr ""
 
-#: cms_plugins.py:390 model_fields.py:299 models.py:511
+#: cms_plugins.py:390 model_fields.py:305 models.py:511
 msgid "Icon"
 msgstr ""
 
@@ -332,26 +332,30 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: model_fields.py:211
+#: model_fields.py:212
 #, python-brace-format
-msgid "Only one of {internal} or {external} may be given."
+msgid "Only one of {0} or {1} may be given."
 msgstr ""
 
 #: model_fields.py:221
+msgid "Please provide a link."
+msgstr ""
+
+#: model_fields.py:227
 #, python-format
 msgid ""
 "%(anchor_field_verbose_name)s is not allowed together with %(field_name)s"
 msgstr ""
 
-#: model_fields.py:237
+#: model_fields.py:243
 msgid "Type"
 msgstr ""
 
-#: model_fields.py:268 models.py:540 models.py:598 models.py:664 models.py:700
+#: model_fields.py:274 models.py:540 models.py:598 models.py:664 models.py:700
 msgid "Context"
 msgstr ""
 
-#: model_fields.py:340
+#: model_fields.py:346
 msgid "Responsive"
 msgstr ""
 
