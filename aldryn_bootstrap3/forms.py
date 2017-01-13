@@ -231,7 +231,7 @@ class CarouselPluginForm(django.forms.ModelForm):
             django.template.loader.select_template([template])
         except django.template.TemplateDoesNotExist:
             raise django.forms.ValidationError(
-                _('Not a valid style (Template {path} does not exist)').format(path=template)
+                _('Not a valid style (template {path} does not exist)').format(path=template)
             )
         return style
 
