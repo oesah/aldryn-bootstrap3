@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-11 16:57+0100\n"
+"POT-Creation-Date: 2017-01-16 17:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Column"
 msgstr ""
 
 #: cms_plugins.py:101 forms.py:78
-msgid "Adapt columns"
+msgid "Adjust columns"
 msgstr ""
 
 #: cms_plugins.py:128
@@ -74,7 +74,7 @@ msgstr ""
 msgid "Link settings"
 msgstr ""
 
-#: cms_plugins.py:263 models.py:322 models.py:1106
+#: cms_plugins.py:263 models.py:322 models.py:1099
 msgid "Image"
 msgstr ""
 
@@ -166,7 +166,7 @@ msgstr ""
 msgid "Spacer"
 msgstr ""
 
-#: cms_plugins.py:1069 models.py:1204
+#: cms_plugins.py:1069 models.py:1197
 msgid "File"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: constants.py:25 models.py:1216
+#: constants.py:25 models.py:1209
 msgid "Open in new window"
 msgstr ""
 
@@ -223,35 +223,53 @@ msgid "Large desktops"
 msgstr ""
 
 #: forms.py:24
-msgid "Create this number of columns inside."
+msgid "Number of columns to create in this row."
 msgstr ""
 
-#: forms.py:38 forms.py:93
+#: forms.py:38
+msgid ""
+"Width of created columns. (Column width can be edited later if required.)"
+msgstr ""
+
+#: forms.py:46
+msgid ""
+"Offset of created columns. (Column offset can be edited later if required.)"
+msgstr ""
+
+#: forms.py:54
+msgid "Push of created columns. (Column push can be edited later if required.)"
+msgstr ""
+
+#: forms.py:62
+msgid "Pull of created columns. (Column pull can be edited later if required.)"
+msgstr ""
+
+#: forms.py:79
+msgid "Adjust this column."
+msgstr ""
+
+#: forms.py:93
 msgid ""
 "Width of created columns. You can still change the width of the column "
 "afterwards."
 msgstr ""
 
-#: forms.py:46 forms.py:101
+#: forms.py:101
 msgid ""
 "Offset of created columns. You can still change the width of the column "
 "afterwards."
 msgstr ""
 
-#: forms.py:54 forms.py:109
+#: forms.py:109
 msgid ""
 "Push of created columns. You can still change the width of the column "
 "afterwards."
 msgstr ""
 
-#: forms.py:62 forms.py:117
+#: forms.py:117
 msgid ""
 "Pull of created columns. You can still change the width of the column "
 "afterwards."
-msgstr ""
-
-#: forms.py:79
-msgid "Adapt this column."
 msgstr ""
 
 #: forms.py:143 model_fields.py:112
@@ -272,7 +290,7 @@ msgstr ""
 
 #: forms.py:234
 #, python-brace-format
-msgid "Not a valid style (Template {path} does not exist)"
+msgid "Not a valid style (template {path} does not exist)"
 msgstr ""
 
 #: model_fields.py:66
@@ -325,10 +343,10 @@ msgstr ""
 
 #: model_fields.py:150 models.py:53 models.py:96 models.py:196 models.py:217
 #: models.py:254 models.py:391 models.py:459 models.py:516 models.py:549
-#: models.py:580 models.py:605 models.py:630 models.py:682 models.py:709
-#: models.py:734 models.py:753 models.py:772 models.py:794 models.py:862
-#: models.py:888 models.py:914 models.py:959 models.py:1032 models.py:1187
-#: models.py:1229
+#: models.py:580 models.py:605 models.py:629 models.py:681 models.py:708
+#: models.py:733 models.py:752 models.py:771 models.py:793 models.py:860
+#: models.py:886 models.py:911 models.py:956 models.py:1025 models.py:1180
+#: models.py:1222
 msgid "Attributes"
 msgstr ""
 
@@ -351,7 +369,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: model_fields.py:274 models.py:540 models.py:598 models.py:664 models.py:700
+#: model_fields.py:274 models.py:540 models.py:598 models.py:663 models.py:699
 msgid "Context"
 msgstr ""
 
@@ -359,7 +377,7 @@ msgstr ""
 msgid "Responsive"
 msgstr ""
 
-#: models.py:67 models.py:641 models.py:925
+#: models.py:67 models.py:640 models.py:922
 msgid "<empty>"
 msgstr ""
 
@@ -396,8 +414,7 @@ msgstr ""
 
 #: models.py:191
 msgid ""
-"Reversing the position by adding the Bootstrap 3 \"blockquote-reverse\" "
-"class."
+"Reverses the position by adding the Bootstrap 3 \"blockquote-reverse\" class."
 msgstr ""
 
 #: models.py:235 templates/admin/aldryn_bootstrap3/widgets/responsive.html:37
@@ -433,7 +450,7 @@ msgstr ""
 msgid "Alternative text"
 msgstr ""
 
-#: models.py:334 models.py:659 models.py:727 models.py:946
+#: models.py:334 models.py:658 models.py:726 models.py:943
 msgid "Title"
 msgstr ""
 
@@ -463,12 +480,12 @@ msgid ""
 "The image height as number in pixels. Example: \"720\" and not \"720px\"."
 msgstr ""
 
-#: models.py:359 models.py:991 models.py:1050
+#: models.py:359 models.py:988 models.py:1043
 msgid "Aspect ratio"
 msgstr ""
 
 #: models.py:364
-msgid "Influences width height of the image according to the selected ratio."
+msgid "Determines width height of the image according to the selected ratio."
 msgstr ""
 
 #: models.py:368
@@ -493,146 +510,142 @@ msgid ""
 "grid."
 msgstr ""
 
-#: models.py:601 models.py:884
+#: models.py:601 models.py:882
 msgid "Title icon"
 msgstr ""
 
 #: models.py:625
-msgid "Whether to add the list-group and subsequent list-group-item classes."
+msgid "Adds the list-group and subsequent list-group-item classes."
 msgstr ""
 
-#: models.py:645 models.py:929
+#: models.py:644 models.py:926
 #, python-format
 msgid "1 item"
 msgid_plural "%(count)i items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: models.py:672
+#: models.py:671
 msgid "State"
 msgstr ""
 
-#: models.py:790 models.py:1183
+#: models.py:789 models.py:1176
 msgid "Size"
 msgstr ""
 
-#: models.py:832
+#: models.py:831
 msgid "Tabs"
 msgstr ""
 
-#: models.py:833
+#: models.py:832
 msgid "Tabs justified"
 msgstr ""
 
-#: models.py:834
+#: models.py:833
 msgid "Pills"
 msgstr ""
 
-#: models.py:835
+#: models.py:834
 msgid "Pills justified"
 msgstr ""
 
-#: models.py:838
+#: models.py:837
 msgid "Fade"
 msgstr ""
 
-#: models.py:842 models.py:906
+#: models.py:841 models.py:904
 msgid "Index"
 msgstr ""
 
-#: models.py:845 models.py:909
-msgid ""
-"Index of element that should be opened on page load (leave it empty if none "
-"of the items should be opened)"
+#: models.py:844 models.py:907
+msgid "Index of element to open on page load (optional)."
 msgstr ""
 
-#: models.py:849
+#: models.py:847
 msgid "Display type"
 msgstr ""
 
-#: models.py:855
+#: models.py:853
 msgid "Animation effect"
 msgstr ""
 
-#: models.py:880
+#: models.py:878
 msgid "Tab title"
 msgstr ""
 
-#: models.py:978
+#: models.py:975
 msgid "Standard"
 msgstr ""
 
-#: models.py:981
+#: models.py:978
 msgid "Slide"
 msgstr ""
 
-#: models.py:985 models.py:1046
+#: models.py:982 models.py:1039
 msgid "Style"
 msgstr ""
 
-#: models.py:998 models.py:1047
+#: models.py:995 models.py:1040
 msgid "Transition effect"
 msgstr ""
 
-#: models.py:1005 models.py:1048
+#: models.py:1002 models.py:1041
 msgid "Ride"
 msgstr ""
 
-#: models.py:1007
-msgid "Whether to mark the carousel as animating starting at page load."
+#: models.py:1004
+msgid "Auto-starts animation of the carousel."
 msgstr ""
 
-#: models.py:1011 models.py:1049
+#: models.py:1007 models.py:1042
 msgid "Interval"
 msgstr ""
 
-#: models.py:1013
-msgid "The amount of time to delay between automatically cycling an item."
+#: models.py:1009
+msgid "Time (in milliseconds) between items."
 msgstr ""
 
-#: models.py:1017
+#: models.py:1012
 msgid "Wrap"
 msgstr ""
 
-#: models.py:1020
-msgid "Whether the carousel should cycle continuously or have hard stops."
+#: models.py:1015
+msgid "Loops carousel animation."
 msgstr ""
 
-#: models.py:1024
+#: models.py:1018
 msgid "Pause"
 msgstr ""
 
-#: models.py:1027
-msgid ""
-"Pauses the cycling of the carousel on mouseenter and resumes the cycling of "
-"the carousel on mouseleave."
+#: models.py:1021
+msgid "Pauses the carousel on hover."
 msgstr ""
 
-#: models.py:1113
+#: models.py:1106
 msgid "Link text"
 msgstr ""
 
-#: models.py:1118
+#: models.py:1111
 msgid "Content"
 msgstr ""
 
-#: models.py:1121
-msgid "alternatively add sub plugins as content"
+#: models.py:1114
+msgid "Content may also be added using child plugins."
 msgstr ""
 
-#: models.py:1158
+#: models.py:1151
 msgid "Folder"
 msgstr ""
 
-#: models.py:1168
+#: models.py:1161
 msgid "<folder is missing>"
 msgstr ""
 
-#: models.py:1211
+#: models.py:1204
 msgid "Name"
 msgstr ""
 
-#: models.py:1220
+#: models.py:1213
 msgid "Show file size"
 msgstr ""
 
@@ -641,17 +654,9 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: templates/admin/aldryn_bootstrap3/plugins/button/change_form.html:14
-msgid "Start adding a text"
-msgstr ""
-
-#: templates/admin/aldryn_bootstrap3/plugins/label/change_form.html:13
-msgid "Example Label"
-msgstr ""
-
 #: templates/admin/aldryn_bootstrap3/widgets/icon.html:8
 msgid ""
-"No Iconsets configured! Please configure at least on Iconset before using "
+"No Iconsets configured. Please configure at least one Iconset before using "
 "this widget."
 msgstr ""
 
