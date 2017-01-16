@@ -21,7 +21,7 @@ from . import models, constants
 class RowPluginBaseForm(django.forms.models.ModelForm):
     create = django.forms.IntegerField(
         label=_('Create columns'),
-        help_text=_('Create this number of columns inside.'),
+        help_text=_('Number of columns to create in this row.'),
         required=False,
         min_value=0,
     )

@@ -188,7 +188,7 @@ class Boostrap3BlockquotePlugin(CMSPlugin):
         verbose_name=_('Reverse quote'),
         default=False,
         blank=True,
-        help_text=_('Reversing the position by adding the Bootstrap 3 '
+        help_text=_('Reverses the position by adding the Bootstrap 3 '
                     '"blockquote-reverse" class.'),
     )
     classes = model_fields.Classes()
@@ -361,7 +361,7 @@ class Boostrap3ImagePlugin(CMSPlugin):
         blank=True,
         default='',
         max_length=255,
-        help_text=_('Influences width height of the image '
+        help_text=_('Determines width height of the image '
                     'according to the selected ratio.'),
     )
     shape = models.CharField(
@@ -841,8 +841,7 @@ class Bootstrap3TabPlugin(CMSPlugin):
         verbose_name=_('Index'),
         null=True,
         blank=True,
-        help_text=_('Index of element that should be opened on page load '
-                    '(leave it empty if none of the items should be opened)'),
+        help_text=_('Index of element to open on page load (optional).'),
     )
     style = models.CharField(
         verbose_name=_('Display type'),
@@ -905,8 +904,7 @@ class Bootstrap3AccordionPlugin(CMSPlugin):
         verbose_name=_('Index'),
         null=True,
         blank=True,
-        help_text=_('Index of element that should be opened on page load '
-                    '(leave it empty if none of the items should be opened)'),
+        help_text=_('Index of element to open on page load (optional).'),
     )
     classes = model_fields.Classes()
     attributes = AttributesField(
@@ -1113,7 +1111,7 @@ class Bootstrap3CarouselSlidePlugin(CMSPlugin, model_fields.LinkMixin):
         verbose_name=_('Content'),
         blank=True,
         default='',
-        help_text=_('alternatively add sub plugins as content'),
+        help_text=_('Content may also be added using child plugins.'),
     )
     classes = model_fields.Classes()
 
