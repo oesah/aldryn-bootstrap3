@@ -36,7 +36,7 @@ for size, name in constants.DEVICE_CHOICES:
     extra_fields_row['create_{}_col'.format(size)] = django.forms.IntegerField(
         label='col-{}-'.format(size),
         help_text=_('Width of created columns. '
-                    'You can still change the width of the column afterwards.'),
+                    '(Column width can be edited later if required.)'),
         required=False,
         min_value=1,
         max_value=constants.GRID_SIZE,
@@ -44,7 +44,7 @@ for size, name in constants.DEVICE_CHOICES:
     extra_fields_row["create_{}_offset".format(size)] = django.forms.IntegerField(
         label='offset-'.format(size),
         help_text=_('Offset of created columns. '
-                    'You can still change the width of the column afterwards.'),
+                    '(Column offset can be edited later if required.)'),
         required=False,
         min_value=0,
         max_value=constants.GRID_SIZE,
@@ -52,7 +52,7 @@ for size, name in constants.DEVICE_CHOICES:
     extra_fields_row['create_{}_push'.format(size)] = django.forms.IntegerField(
         label='push-'.format(size),
         help_text=_('Push of created columns. '
-                    'You can still change the width of the column afterwards.'),
+                    '(Column push can be edited later if required.)'),
         required=False,
         min_value=0,
         max_value=constants.GRID_SIZE,
@@ -60,7 +60,7 @@ for size, name in constants.DEVICE_CHOICES:
     extra_fields_row['create_{}_pull'.format(size)] = django.forms.IntegerField(
         label='pull-'.format(size),
         help_text=_('Pull of created columns. '
-                    'You can still change the width of the column afterwards.'),
+                    '(Column pull can be edited later if required.)'),
         required=False,
         min_value=0,
         max_value=constants.GRID_SIZE,
@@ -75,8 +75,8 @@ RowPluginForm = type(
 
 class ColumnPluginBaseForm(django.forms.models.ModelForm):
     create = django.forms.IntegerField(
-        label=_('Adapt columns'),
-        help_text=_('Adapt this column.'),
+        label=_('Adjust columns'),
+        help_text=_('Adjust this column.'),
         required=False,
         min_value=0,
     )

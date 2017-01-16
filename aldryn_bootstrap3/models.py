@@ -622,8 +622,7 @@ class Bootstrap3ListGroupPlugin(CMSPlugin):
         verbose_name='.list-group',
         default=True,
         blank=True,
-        help_text=_('Whether to add the list-group and subsequent '
-                    'list-group-item classes.'),
+        help_text=_('Adds the list-group and subsequent list-group-item classes.'),
     )
     classes = model_fields.Classes()
     attributes = AttributesField(
@@ -1004,28 +1003,24 @@ class Bootstrap3CarouselPlugin(CMSPlugin):
     ride = models.BooleanField(
         verbose_name=_('Ride'),
         default=True,
-        help_text=_('Whether to mark the carousel as animating '
-                    'starting at page load.'),
+        help_text=_('Auto-starts animation of the carousel.'),
     )
     interval = models.IntegerField(
         verbose_name=_('Interval'),
         default=5000,
-        help_text=_('The amount of time to delay between automatically '
-                    'cycling an item.'),
+        help_text=_('Time (in milliseconds) between items.'),
     )
     wrap = models.BooleanField(
         verbose_name=_('Wrap'),
         default=True,
         blank=True,
-        help_text=_('Whether the carousel should cycle continuously or '
-                    'have hard stops.'),
+        help_text=_('Loops carousel animation.'),
     )
     pause = models.BooleanField(
         verbose_name=_('Pause'),
         default=True,
         blank=True,
-        help_text=_('Pauses the cycling of the carousel on mouseenter and '
-                    'resumes the cycling of the carousel on mouseleave.'),
+        help_text=_('Pauses the carousel on hover.'),
     )
     classes = model_fields.Classes()
     attributes = AttributesField(
