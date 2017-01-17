@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-16 17:20+0100\n"
+"POT-Creation-Date: 2017-01-17 14:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,50 +226,24 @@ msgstr ""
 msgid "Number of columns to create in this row."
 msgstr ""
 
-#: forms.py:38
-msgid ""
-"Width of created columns. (Column width can be edited later if required.)"
+#: forms.py:38 forms.py:93
+msgid "Width of created columns (can be edited later if required.)"
 msgstr ""
 
-#: forms.py:46
-msgid ""
-"Offset of created columns. (Column offset can be edited later if required.)"
+#: forms.py:46 forms.py:101
+msgid "Offset of created columns (can be edited later if required.)"
 msgstr ""
 
-#: forms.py:54
-msgid "Push of created columns. (Column push can be edited later if required.)"
+#: forms.py:54 forms.py:109
+msgid "Push of created columns (can be edited later if required.)"
 msgstr ""
 
-#: forms.py:62
-msgid "Pull of created columns. (Column pull can be edited later if required.)"
+#: forms.py:62 forms.py:117
+msgid "Pull of created columns (can be edited later if required.)"
 msgstr ""
 
 #: forms.py:79
 msgid "Adjust this column."
-msgstr ""
-
-#: forms.py:93
-msgid ""
-"Width of created columns. You can still change the width of the column "
-"afterwards."
-msgstr ""
-
-#: forms.py:101
-msgid ""
-"Offset of created columns. You can still change the width of the column "
-"afterwards."
-msgstr ""
-
-#: forms.py:109
-msgid ""
-"Push of created columns. You can still change the width of the column "
-"afterwards."
-msgstr ""
-
-#: forms.py:117
-msgid ""
-"Pull of created columns. You can still change the width of the column "
-"afterwards."
 msgstr ""
 
 #: forms.py:143 model_fields.py:112
